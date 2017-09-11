@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号"
+        android:textSize="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="68dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/dialog_layout"
+        android:layout_alignStart="@+id/dialog_layout"
+        android:layout_marginStart="16dp" />
+
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <Button
+                android:id="@+id/btn_take_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:onClick="check"
+                android:text="拍照选取"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="#828282" />
+
+            <Button
+                android:id="@+id/btn_pick_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:onClick="check"
+                android:textSize="20dp"
+                android:layout_marginTop="0dip"
+                android:text="相册选取"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dip"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:onClick="check"
+            android:layout_height="55dp"
+            android:textSize="20dp"
+            android:text="取消"
+            android:textColor="#ffff0000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Test"
+        android:id="@+id/username"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp" />
+
+    <ImageView
+        android:layout_width="89dp"
+        android:layout_height="89dp"
+        android:id="@+id/avatar"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/default_avatar"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/dialog_layout"
+        android:layout_alignEnd="@+id/dialog_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="点击更换头像"
+        android:id="@+id/textView2"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/avatar"
+        android:layout_alignRight="@+id/avatar"
+        android:layout_alignEnd="@+id/avatar" />
+
+</RelativeLayout>

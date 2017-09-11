@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gao.hzyc.com.im_c.OprationActivity"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="注  册"
+        android:textSize="25dp"
+        android:textColor="#2584e4"
+        android:background="@drawable/flatbutton"
+        android:id="@+id/regit"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/login"
+        android:layout_alignStart="@+id/login" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="登  录"
+        android:textSize="25dp"
+        android:id="@+id/login"
+        android:background="@drawable/flatbutton_1"
+        android:layout_marginBottom="139dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

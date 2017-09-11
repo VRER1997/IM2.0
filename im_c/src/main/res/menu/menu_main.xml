@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="gao.hzyc.com.a_demo.MainActivity">
+    <item
+        android:id="@+id/add_friends_cap"
+        android:orderInCategory="100"
+        android:title="扫一扫"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/add_friends"
+        android:orderInCategory="100"
+        android:title="添加朋友"
+        app:showAsAction="never" />
+</menu>
